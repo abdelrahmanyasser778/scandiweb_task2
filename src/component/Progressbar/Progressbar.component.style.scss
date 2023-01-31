@@ -1,0 +1,84 @@
+
+.myProgressBar {
+  background: var(--breadcrumbs-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+
+  .stepText{
+    font-weight: bold;
+  }
+  .myStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px 0 15px;
+    
+    .Circle {
+      height: 30px;
+      width: 30px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+      
+      p {
+        margin: 0;
+        line-height: 0;
+      }
+
+      .right{
+        font-size: 15px;
+      }
+    }
+  }
+  .myLine {
+   
+    height: 5px;
+    width: 100%;
+    
+  
+    div {
+      height: 100%;
+      width: 100%;
+      border-radius: 35px
+    }
+  }
+}
+
+@keyframes fade {
+  0% {
+  }
+  100% {
+    background-color: var(--primary-base-color);
+  }
+}
+
+.primary {
+  div {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    p {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+
+}
+
+.grey {
+  div {
+    background-color: rgb(201, 201, 201);
+    p {
+      color: var(--secondary-dark-color)
+    }
+  }
+  p {
+    
+    color: var(--secondary-dark-color);
+    font-weight: bold;
+  }
+}
